@@ -1,0 +1,16 @@
+weather-app-page {
+  max-width: 800px;
+  margin: 50px auto;
+}
+.weather-app {
+  padding: 20px;
+  border: 2px solid;
+  border-color: #1aa6b7;
+  border-radius: 15px;
+  background-color: #e8ffff;
+  font-family: "Viga", sans-serif;
+  color: #132743;
+}
+#city {
+  margin: 20px 0;
+}
