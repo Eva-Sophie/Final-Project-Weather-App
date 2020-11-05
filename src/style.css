@@ -11,6 +11,39 @@ weather-app-page {
   font-family: "Viga", sans-serif;
   color: #132743;
 }
+
+#city-input {
+  border: 2px solid;
+  border-color: #1aa6b7;
+  border-radius: 5px;
+  background-color: #fffff;
+}
+#search-button {
+  background-color: #1aa6b7;
+  border-radius: 5px;
+  color: #e8ffff;
+}
+.current-location {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 800px;
+}
 #city {
+  margin: 20px 0 5px;
+  font-size: 48px;
+}
+#last-updated {
+  font-weight: 100;
+}
+#date {
   margin: 20px 0;
+}
+#temp-today {
+  font-size: 42px;
+}
+.card {
+  border: 2px solid;
+  border-color: #1aa6b7;
+  border-radius: 15px;
+  background-color: #e8ffff;
 }
