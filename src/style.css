@@ -29,14 +29,19 @@ weather-app-page {
   margin-left: 800px;
 }
 #city {
-  margin: 20px 0 5px;
+  margin: 20px 0 20px;
   font-size: 48px;
 }
-#last-updated {
+h4 {
   font-weight: 100;
 }
 #date {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+#time {
+  margin: 0 0;
+  padding: 0;
 }
 #temp-today {
   font-size: 42px;
