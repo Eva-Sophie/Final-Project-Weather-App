@@ -19,7 +19,7 @@ weather-app-page {
   border: 2px solid;
   border-color: #1aa6b7;
   border-radius: 5px;
-  background-color: #fffff;
+  background-color: #e8ffff;
 }
 #search-button {
   background-color: #1aa6b7;
@@ -31,7 +31,7 @@ weather-app-page {
   border-radius: 5px;
   color: #e8ffff;
 }
-#city {
+h1 {
   margin: 0 0 20px;
   font-size: 48px;
 }
@@ -43,11 +43,6 @@ h3 {
   margin-top: 0;
 }
 
-}
-#temp-today {
-  margin-top: 0;
-  font-size: 48px;
-}
 h4 {
   margin: 0 0 5px;
   font-size: 20px;

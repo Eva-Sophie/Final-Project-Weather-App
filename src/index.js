@@ -19,6 +19,7 @@
     let lastUpdated = document.querySelector("#day");
     return `${day}, ${hour}:${minutes} PM`;
     }
+
     function showWeather(response) {
       console.log(response.data);
       document.querySelector("#city").innerHTML = response.data.name;
@@ -52,6 +53,7 @@
    event.preventDefault();
    navigator.geolocation.getCurrentPosition(searchLocation);
    }
+  
    let searchForm = document.querySelector("#search-form");
    searchForm.addEventListener("submit", submitCity);
 
