@@ -24,9 +24,6 @@ weather-app-page {
   color: #e8ffff;
 }
 .current-location {
-  position: absolute;
-  margin-top: -30px;
-  margin-left: 800px;
 }
 #city {
   margin: 20px 0 20px;
@@ -35,11 +32,11 @@ weather-app-page {
 h4 {
   font-weight: 100;
 }
-#date {
+#last-updated {
   margin: 20px 0 0 0;
   padding: 0;
 }
-#time {
+#day {
   margin: 0 0;
   padding: 0;
 }
