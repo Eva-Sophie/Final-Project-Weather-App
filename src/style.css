@@ -5,35 +5,37 @@ weather-app-page {
   max-width: 800px;
   padding: 20px;
   border: 2px solid;
-  border-color: #1aa6b7;
-  border-radius: 15px;
-  background-color: #e8ffff;
+  border-color: #1f6f8b;
+  border-radius: 10px;
+  background-color: #bbe1fa;
   font-family: "Viga", sans-serif;
-  color: #132743;
+  color: #0f4c75;
 }
 #search-form {
-  margin: 10px 0 20px;
+  margin: 2px 0 25px;
 }
 
 #city-input {
   border: 2px solid;
-  border-color: #1aa6b7;
+  border-color: #132743;
   border-radius: 5px;
-  background-color: #e8ffff;
+  background-color: #ffffff;
 }
 #search-button {
-  background-color: #1aa6b7;
+  background-color: #3282b8;
   border-radius: 5px;
-  color: #e8ffff;
+  border-color: #132743;
+  color: #d6e3f7;
 }
 #current-location {
-  background-color: green;
+  background-color: #0f4c75;
   border-radius: 5px;
-  color: #e8ffff;
+  color: #fff3e2;
 }
 h1 {
   margin: 0 0 20px;
   font-size: 48px;
+  color: #01385e;
 }
 h3 {
   font-size: 20px;
@@ -50,6 +52,9 @@ h4 {
 #weather-description::first-letter {
   text-transform: capitalize;
 }
+#icon {
+  font-size: 100px;
+}
 .card-img-top {
   height: 100px;
   width: 100px;
@@ -59,7 +64,7 @@ h4 {
 }
 .card {
   border: 2px solid;
-  border-color: #1aa6b7;
-  border-radius: 15px;
-  background-color: #e8ffff;
+  border-color: #1f6f8b;
+  border-radius: 10px;
+  background-color: #c4e1f5;
 }
