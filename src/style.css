@@ -35,13 +35,14 @@ weather-app-page {
   margin: 0 0 20px;
   font-size: 48px;
 }
+h3 {
+  font-size: 20px;
+}
 
 #last-updated {
   margin-top: 0;
-  font-size: 22px;
 }
-#day {
-  font-size: 22px;
+
 }
 #temp-today {
   margin-top: 0;
@@ -51,7 +52,7 @@ h4 {
   margin: 0 0 5px;
   font-size: 20px;
 }
-#weather-description {
+#weather-description::first-letter {
   text-transform: capitalize;
 }
 .card-img-top {

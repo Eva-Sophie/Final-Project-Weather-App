@@ -4,9 +4,10 @@
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let month = months[now.getMonth()];
     let year = now.getFullYear();
-    let date = document.querySelector("#last-updated");
+    let date = document.querySelector("#date");
     date.innerHTML = `${dateMonth} ${month}, ${year}`;
 
+    function formatDate (timestamp){
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = days[now.getDay()];
     let hour = now.getHours();
@@ -15,9 +16,9 @@
     let minutes = now.getMinutes();
     if (minutes < 10) {
     minutes = `0${minutes}`};
-    let moment = document.querySelector("#day");
-    moment.innerHTML = `${day}, ${hour}:${minutes} PM`;
-
+    let lastUpdated = document.querySelector("#day");
+    return `${day}, ${hour}:${minutes} PM`;
+    }
     function showWeather(response) {
       console.log(response.data);
       document.querySelector("#city").innerHTML = response.data.name;
@@ -25,6 +26,7 @@
       document.querySelector("#weather-description").innerHTML = response.data.weather[0].description;      
       document.querySelector("#humidity").innerHTML = `Humidity: ${response.data.main.humidity} %`;
       document.querySelector("#wind").innerHTML = `Windspeed: ${Math.round(response.data.wind.speed)} km/h`;
+      document.querySelector("#day").innerHTML = formatDate(response.data.dt * 1000);
 
     }
 
