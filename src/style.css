@@ -23,25 +23,41 @@ weather-app-page {
   border-radius: 5px;
   color: #e8ffff;
 }
-.current-location {
+#current-location {
+  background-color: green;
+  border-radius: 5px;
+  color: #e8ffff;
 }
 #city {
   margin: 20px 0 20px;
   font-size: 48px;
 }
-h4 {
-  font-weight: 100;
-}
+
 #last-updated {
   margin: 20px 0 0 0;
   padding: 0;
+  font-size: 22px;
 }
 #day {
   margin: 0 0;
   padding: 0;
+  font-size: 22px;
 }
 #temp-today {
   font-size: 42px;
+}
+#weather-description {
+  font-size: 22px;
+}
+#humidity {
+  font-size: 22px;
+}
+#wind {
+  font-size: 22px;
+}
+.card-img-top {
+  height: 100px;
+  width: 100px;
 }
 .card {
   border: 2px solid;
