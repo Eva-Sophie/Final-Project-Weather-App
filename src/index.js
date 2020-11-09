@@ -28,8 +28,9 @@
       document.querySelector("#humidity").innerHTML = `Humidity: ${response.data.main.humidity} %`;
       document.querySelector("#wind").innerHTML = `Windspeed: ${Math.round(response.data.wind.speed)} km/h`;
       document.querySelector("#day").innerHTML = formatDate(response.data.dt * 1000);
-
-    }
+      document.querySelector("#icon").setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+      document.querySelector("#icon").setAttribute("alt", response.data.weather[0].description);
+}
 
     function searchCity(city) {
       let apiKey = "5b0bfa960cf8480fafd9ea6aed867930";
