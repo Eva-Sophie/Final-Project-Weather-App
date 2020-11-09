@@ -22,6 +22,10 @@
       console.log(response.data);
       document.querySelector("#city").innerHTML = response.data.name;
       document.querySelector("#temp-today").innerHTML = `${Math.round(response.data.main.temp)}°C`;
+      document.querySelector("#weather-description").innerHTML = response.data.weather[0].main;      
+      document.querySelector("#humidity").innerHTML = `Humidity: ${response.data.main.humidity} %`;
+      document.querySelector("#wind").innerHTML = `Windspeed: ${Math.round(response.data.wind.speed)} km/h`;
+
     }
 
     function searchCity(city) {
