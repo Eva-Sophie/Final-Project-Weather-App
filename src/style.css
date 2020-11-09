@@ -44,19 +44,12 @@ weather-app-page {
   font-size: 22px;
 }
 #temp-today {
+  margin-top: 0;
   font-size: 48px;
 }
-#description {
-  margin: 68px 0 0;
-}
-#weather-description {
-  font-size: 22px;
-}
-#humidity {
-  font-size: 22px;
-}
-#wind {
-  font-size: 22px;
+h4 {
+  margin: 0 0 5px;
+  font-size: 20px;
 }
 .card-img-top {
   height: 100px;
