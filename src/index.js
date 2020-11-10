@@ -14,8 +14,11 @@
 
     function showWeather(response) {
       console.log(response.data);
+
+      celsiusTemperature = response.data.main.temp;
+
       document.querySelector("#city").innerHTML = response.data.name;
-      document.querySelector("#temp-today").innerHTML = `${Math.round(response.data.main.temp)}°C`;
+      document.querySelector("#temp-today").innerHTML = `${Math.round(response.data.main.temp)}`;
       document.querySelector("#weather-description").innerHTML = response.data.weather[0].description;      
       document.querySelector("#humidity").innerHTML = `Humidity: ${response.data.main.humidity} %`;
       document.querySelector("#wind").innerHTML = `Windspeed: ${Math.round(response.data.wind.speed)} km/h`;
@@ -46,9 +49,22 @@
    event.preventDefault();
    navigator.geolocation.getCurrentPosition(searchLocation);
    }
+
+   function showFahrenheitTemp(event) {
+     event.preventDefault();
+     let temperatureElement = document.querySelector("#temp-today");
+     let fahrenheitTemperature = (celsiusTemperature*9)/5+32;
+     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+   }
   
    let searchForm = document.querySelector("#search-form");
    searchForm.addEventListener("submit", submitCity);
 
    let currentLocationButton = document.querySelector("#current-location");
    currentLocationButton.addEventListener("click", getCurrentLocation);
+
+   let celsiusTemperature = null;
+   let fahrenheitLink = document.querySelector("#fahrenheit");
+   fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+   searchCity("Hagen");

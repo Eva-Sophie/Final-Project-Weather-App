@@ -37,6 +37,12 @@ h1 {
   font-size: 48px;
   color: #01385e;
 }
+#temp-today {
+  margin: 0 0 20px;
+  font-size: 48px;
+  color: #01385e;
+  font-weight: normal;
+}
 h3 {
   font-size: 20px;
 }
