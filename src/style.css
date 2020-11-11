@@ -65,19 +65,3 @@ h4 {
 #weather-description::first-letter {
   text-transform: capitalize;
 }
-#icon {
-  display: inline-block;
-}
-.card-img-top {
-  height: 100px;
-  width: 100px;
-}
-.forecast {
-  margin-top: 30px;
-}
-.card {
-  border: 2px solid;
-  border-color: #1f6f8b;
-  border-radius: 10px;
-  background-color: #c4e1f5;
-}
