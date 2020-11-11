@@ -34,12 +34,12 @@ weather-app-page {
 }
 h1 {
   margin: 0 0 20px;
-  font-size: 48px;
+  font-size: 44px;
   color: #01385e;
 }
 #temp-today {
   margin: 0 0 20px;
-  font-size: 48px;
+  font-size: 44px;
   color: #01385e;
   font-weight: normal;
 }
@@ -51,7 +51,7 @@ h1 {
   text-decoration: none;
 }
 h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #last-updated {
@@ -60,7 +60,7 @@ h3 {
 
 h4 {
   margin: 0 0 5px;
-  font-size: 24px;
+  font-size: 22px;
 }
 #weather-description::first-letter {
   text-transform: capitalize;
