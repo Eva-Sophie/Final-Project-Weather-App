@@ -43,6 +43,13 @@ h1 {
   color: #01385e;
   font-weight: normal;
 }
+.active {
+  color: #01385e;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+}
 h3 {
   font-size: 20px;
 }

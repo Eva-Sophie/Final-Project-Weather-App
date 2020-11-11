@@ -55,8 +55,18 @@
      let temperatureElement = document.querySelector("#temp-today");
      let fahrenheitTemperature = (celsiusTemperature*9)/5+32;
      temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+     celsiusLink.classList.remove("active");
+     fahrenheitLink.classList.add("active");
    }
   
+    function showCelsiusTemp(event) {
+     event.preventDefault();
+     let temperatureElement = document.querySelector("#temp-today");
+     temperatureElement.innerHTML = Math.round(celsiusTemperature);
+     fahrenheitLink.classList.remove("active");
+     celsiusLink.classList.add("active");
+   }
+
    let searchForm = document.querySelector("#search-form");
    searchForm.addEventListener("submit", submitCity);
 
@@ -64,7 +74,11 @@
    currentLocationButton.addEventListener("click", getCurrentLocation);
 
    let celsiusTemperature = null;
+
    let fahrenheitLink = document.querySelector("#fahrenheit");
    fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+   let celsiusLink = document.querySelector("#celsius");
+   celsiusLink.addEventListener("click", showCelsiusTemp);
 
    searchCity("Hagen");
